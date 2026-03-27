@@ -1,0 +1,22 @@
+name: Build KingsSMP Plugin
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+          cache: maven
+      - run: mvn clean package -U
+      - uses: actions/upload-artifact@v4
+        with:
+          name: kingsSMP-plugin
+          path: target/kingsSMP-*.jar
