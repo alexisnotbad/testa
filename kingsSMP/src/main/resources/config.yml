@@ -1,0 +1,55 @@
+# KingsSMP Configuration
+
+# ─── Resource Pack ────────────────────────────────────────────────────────────
+# The plugin bundles and hosts the resource pack automatically so players get
+# custom weapon textures the moment they join. Requires port 8765 to be open.
+resource-pack:
+  enabled: true
+  # Port for the internal HTTP server. Open/forward this on your firewall.
+  port: 8765
+  # Your server's public IP or domain. Leave blank to auto-detect.
+  external-ip: ""
+  # If true, players who decline the pack are kicked.
+  required: true
+  # Force re-extract the bundled zip even if it already exists on disk.
+  always-overwrite: false
+
+# ─── Ritual ───────────────────────────────────────────────────────────────────
+ritual:
+  duration-seconds: 600  # 10 minutes
+  broadcast-interval-seconds: 60
+  broadcast-radius-blocks: -1  # -1 = server-wide
+
+# ─── Weapons ──────────────────────────────────────────────────────────────────
+weapons:
+  # Once crafted, weapon cannot be re-crafted. Only obtainable by killing the owner.
+  unique-items: true
+  # Prevents storing in chests, barrels, shulker boxes, etc.
+  no-storage: true
+
+lifestealer:
+  max-bonus-hearts: 4
+  lifesteal-percent: 10
+
+void-bow:
+  teleport-cooldown-seconds: 3
+
+ghostblade:
+  invisibility-duration-seconds: 300  # 5 minutes
+
+judgement-gavel:
+  kills-per-upgrade: 2
+
+dragonbone-blade:
+  dragon-summon-cooldown-seconds: 60
+
+pretty-kitty:
+  cat-horde-count: 6
+  backstab-multiplier: 2.0
+
+# ─── Recipe Release Schedule ──────────────────────────────────────────────────
+recipes:
+  # If false (recommended), all recipes start locked.
+  # Use /kingssmp recipe enable <weapon> to unlock each one when you're ready.
+  # If true, all recipes are available from the start.
+  default-enabled: false

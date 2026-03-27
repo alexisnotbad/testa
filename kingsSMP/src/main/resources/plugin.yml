@@ -1,0 +1,17 @@
+name: kingsSMP
+version: ${project.version}
+main: com.kingssmp.KingsSMP
+api-version: '1.21'
+description: Legendary Weapons Plugin for kingsSMP
+author: KingsSMP
+
+commands:
+  kingssmp:
+    description: KingsSMP admin commands
+    usage: /kingssmp <give|recipe|status|reload>
+    permission: kingssmp.admin
+
+permissions:
+  kingssmp.admin:
+    description: Access to admin commands
+    default: op
