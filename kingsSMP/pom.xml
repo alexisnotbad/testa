@@ -32,8 +32,6 @@
             <version>1.21.1-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
-        <!-- JOML is bundled with Paper/Spigot but declaring it provided lets the
-             compiler resolve org.joml.* types (Vector3f, AxisAngle4f, etc.) -->
         <dependency>
             <groupId>org.joml</groupId>
             <artifactId>joml</artifactId>
@@ -60,20 +58,22 @@
             </plugin>
         </plugins>
         <resources>
-    <resource>
-        <directory>src/main/resources</directory>
-        <filtering>true</filtering>
-        <excludes>
-            <exclude>**/*.zip</exclude>
-            <exclude>**/*.png</exclude>
-        </excludes>
-    </resource>
-    <resource>
-        <directory>src/main/resources</directory>
-        <filtering>false</filtering>
-        <includes>
-            <include>**/*.zip</include>
-            <include>**/*.png</include>
-        </includes>
-    </resource>
-</resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+                <excludes>
+                    <exclude>**/*.zip</exclude>
+                    <exclude>**/*.png</exclude>
+                </excludes>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>false</filtering>
+                <includes>
+                    <include>**/*.zip</include>
+                    <include>**/*.png</include>
+                </includes>
+            </resource>
+        </resources>
+    </build>
+</project>
