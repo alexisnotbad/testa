@@ -84,7 +84,7 @@ public class PlayerDeathListener implements Listener {
         killer.getInventory().setItemInMainHand(updatedItem);
 
         // Grant permanent +2 max health (1 heart = 2 HP in Minecraft)
-        var maxHealthAttr = killer.getAttribute(Attribute.MAX_HEALTH);
+        var maxHealthAttr = killer.getAttribute(Attribute.GENERIC_MAX_HEALTH);
         if (maxHealthAttr != null) {
             NamespacedKey key = new NamespacedKey(plugin, "lifestealer_heart_" + newHearts);
             // Remove duplicate modifier if any
