@@ -1,0 +1,14 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "item/golden_sword"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 1006
+      },
+      "model": "item/kingssmp/pretty_kitty_blade"
+    }
+  ]
+}

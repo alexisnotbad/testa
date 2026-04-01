@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "INI",
+    "IMI",
+    "INI"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_block"
+    },
+    "N": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "M": {
+      "item": "minecraft:mace"
+    }
+  },
+  "result": {
+    "id": "minecraft:mace",
+    "count": 1
+  },
+  "show_notification": true
+}

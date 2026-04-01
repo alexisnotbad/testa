@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AEA",
+    "ATA",
+    "AEA"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "E": {
+      "item": "minecraft:end_crystal"
+    },
+    "T": {
+      "item": "minecraft:trident"
+    }
+  },
+  "result": {
+    "id": "minecraft:trident",
+    "count": 1
+  },
+  "show_notification": true
+}

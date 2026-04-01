@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "kingssmp",
+  "version": "${version}",
+  "name": "KingsSMP Legendary Weapons",
+  "description": "Legendary weapons for the KingsSMP server.",
+  "authors": ["KingsSMP"],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/kingssmp/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.kingssmp.KingsSMPMod"]
+  },
+  "mixins": ["kingssmp.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.16.5",
+    "fabric-api": "*",
+    "minecraft": "~1.21.1"
+  }
+}

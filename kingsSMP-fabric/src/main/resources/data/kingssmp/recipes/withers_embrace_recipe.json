@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "WBW",
+    "WSW",
+    "WBW"
+  ],
+  "key": {
+    "W": {
+      "item": "minecraft:wither_skeleton_skull"
+    },
+    "B": {
+      "item": "minecraft:nether_star"
+    },
+    "S": {
+      "item": "minecraft:netherite_sword"
+    }
+  },
+  "result": {
+    "id": "minecraft:netherite_sword",
+    "count": 1
+  },
+  "show_notification": true
+}

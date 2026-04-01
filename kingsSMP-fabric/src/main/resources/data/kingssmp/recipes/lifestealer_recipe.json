@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NRN",
+    "NBN",
+    "NRN"
+  ],
+  "key": {
+    "N": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "R": {
+      "item": "minecraft:redstone_block"
+    },
+    "B": {
+      "item": "minecraft:netherite_sword"
+    }
+  },
+  "result": {
+    "id": "minecraft:netherite_sword",
+    "count": 1
+  },
+  "show_notification": true
+}

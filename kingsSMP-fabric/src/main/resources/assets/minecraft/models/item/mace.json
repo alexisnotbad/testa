@@ -1,0 +1,20 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "item/mace"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 1005
+      },
+      "model": "item/kingssmp/judgement_gavel"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1008
+      },
+      "model": "item/kingssmp/thunderfist_gauntlet"
+    }
+  ]
+}

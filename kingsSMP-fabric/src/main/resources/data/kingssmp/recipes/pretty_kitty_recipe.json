@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GSG",
+    "SPS",
+    "GSG"
+  ],
+  "key": {
+    "G": {
+      "item": "minecraft:gold_block"
+    },
+    "S": {
+      "item": "minecraft:string"
+    },
+    "P": {
+      "item": "minecraft:pink_dye"
+    }
+  },
+  "result": {
+    "id": "minecraft:golden_sword",
+    "count": 1
+  },
+  "show_notification": true
+}
